@@ -1,0 +1,142 @@
+@charset "utf-8";
+		
+		@font-face{
+		    font-family:"Gotham-Book";
+		    src: url(fonts/Gotham-Book.otf);
+			}
+			@font-face{
+			    font-family:"Gotham-Bold";
+			    src: url(fonts/Gotham-Bold.otf);
+			}
+			@font-face{
+			    font-family:"FontAwesome";
+			    src: url(fonts/FontAwesome.otf.otf);
+			}
+			*{
+				font-family:"Gotham-Book";
+			}
+		html, body{
+			margin: 0px;
+			padding: 0px;
+			height: 100%;
+		}
+		h1, h2, h3, h4, h5{
+			margin: 0px;
+			text-align: center;
+		}
+		#main-wrapper{
+			min-height: 100%;
+			position: relative;
+		}
+		.cuadroRegGral{
+			z-index: 2;
+			border: 1px solid #D20A16;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+			position: absolute;
+			width: 320px;
+			height: 510px;
+			margin: auto;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+		}
+		.cuadroRegGral2{
+			z-index: 2;
+			border: 1px solid #D20A16;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+			position: absolute;
+			width: 320px;
+			height: 650px;
+			margin: 10px auto;
+			top: 0px;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+		}
+		.formText{
+			display: block;
+			width: 270px;
+			height: 44px;
+			border: 1px solid #D20A16;
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+			margin: auto;
+			margin-top: 0px;
+			background-color: rgba(255, 255, 255, 0.3);
+			
+		}
+		.subTitulo{
+			color: #676767;
+			font-family: "Gotham-Bold";
+		}
+		.logLoginNR{
+			display: block;
+			margin: 20px auto;
+			width: 70px;
+			background-color: rgba(210, 10, 22, 0.9);
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+			padding: 10px;
+			
+		}
+		input[type=text]{
+			font-size: 20px;
+			padding: 0px 10px 0px 10px;
+			text-transform: uppercase;
+		}
+		::-webkit-input-placeholder { text-transform: none; }
+		::-moz-placeholder { text-transform: none; } /* firefox 19+ */
+		:-ms-input-placeholder { text-transform: none; } /* ie */
+		input:-moz-placeholder { text-transform: none; }
+		input[type=mail]{
+			font-size: 20px;
+			padding: 0px 10px 0px 10px;
+		}
+		input[type=password]{
+			font-size: 20px;
+			padding: 0px 10px 0px 10px;
+		}
+		.btnLoginUno{
+			display: block;
+			width: 90%;
+			height: 44px;
+			background-color: rgba(210, 10, 22, 0.8);
+			-webkit-border-radius: 3px;
+			        border-radius: 3px;
+			margin: auto;
+			border: 0px solid;
+			margin-top: 10px;
+			color: #FFF;
+			font-size: 1.1em;
+			cursor:pointer; 
+		}
+		.btnLoginUno:hover{
+			background-color: rgba(160, 10, 21, 0.8);
+		}
+		.aliDerecha{
+			float: right;
+			padding: 0px 10px 0px 0px;
+		}
+		.marcaAguaX{
+			z-index: -1;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			background-color: rgba(255, 255, 255, 0.8);
+		}
+		.predialLogo{
+			top: 0px;
+			display: block;
+			width: 320px;
+		}
+		.infoTxtInput{
+			font-style: italic;
+			padding: 0px 0px 5px 15px;
+			margin: 0px;
+			color: #676767;
+			font-size: .8em;
+		}
