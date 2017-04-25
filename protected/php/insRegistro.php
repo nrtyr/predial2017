@@ -20,6 +20,7 @@ if (isset($_POST['txtNombre']) && !empty($_POST['txtNombre']) &&
 	
 	$con = new SQLite3("../data/usuarios.db") or die("Problemas para conectar!");
 	$cs = $con -> query("INSERT INTO login (nombre,aPaterno,aMaterno,correo,password,claveCat) VALUES ('$nombreVar','$aPaternoVar','$aMaternoVar','$_POST[txtCorreo]','$pwCode','$claveCatVar')");
+	$con -> close();
 
 	echo "<script> alert('Datos Insertados');</script>";
 	echo "<script> window.location='../../index.php';</script>";

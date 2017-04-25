@@ -24,13 +24,13 @@
 					<input type="text" name="txtAMat" placeholder="Apellido Materno" class="formText" required />
 					<br>
 					<p class="infoTxtInput">Correo Electrónico:</p>
-					<input type="mail" name="txtCorreo" placeholder="@correo.com" class="formText" required />
+					<input type="email" name="txtCorreo" placeholder="@correo.com" class="formText" required />
 					<br>
 					<p class="infoTxtInput">Contraseña:</p>
 					<input type="password" name="txtPass" placeholder="Contraseña" class="formText" minlength="6" required />
 					<br>
 					<p class="infoTxtInput">Clave Catastral:</p>
-					<input type="text" name="txtClvCat" placeholder="17 Dígitos" class="formText" maxlength="17" minlength="17" required />
+					<input type="text" name="txtClvCat" placeholder="17 Dígitos" class="formText" maxlength="16" minlength="16" required />
 					<br>
 					<input type="submit"  value="Siguiente" class="btnLoginUno"/>
 				
