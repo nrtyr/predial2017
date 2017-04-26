@@ -3,6 +3,7 @@
 error_reporting(E_ALL ^ E_DEPRECATED);
 header("Content-Type: text/html; Charset=UTF-8");
 
+session_start();
 
 if (isset($_POST['txtCorreo']) && !empty($_POST['txtCorreo'])) {
 
@@ -16,9 +17,13 @@ if (isset($_POST['txtCorreo']) && !empty($_POST['txtCorreo'])) {
 		$aPaterno = $resul['aPaterno'];
 		$aMaterno = $resul['aMaterno'];
 		$correo = $resul['correo'];
+		$pwUsuario = $resul['password'];
+		$clvCat = $resul['claveCat'];
 	}
 
 	if ($correo == $_POST['txtCorreo']) {
+		$_SESSION['pass'] = $pwUsuario;
+		$_SESSION['clvCat'] = $clvCat;
 		echo ' 
 <!DOCTYPE html>
 <html lang="es">
@@ -47,7 +52,7 @@ if (isset($_POST['txtCorreo']) && !empty($_POST['txtCorreo'])) {
 
 		<form action="comproDos.php" method="post">
 			<p class="infoTxtInput">';echo $nombre . ' ' .$aMaterno. ' '. $aMaterno ; echo'</p>
-			<input type="password" name="txtContraseña" class="formText" placeholder="Contraseña"  required/>
+			<input type="password" name="txtContrasena" class="formText" placeholder="Contraseña"  required/>
 			<br>
 			<input type="submit" value="Iniciar" class="btnLoginUno" />
 		</form>
@@ -66,6 +71,8 @@ if (isset($_POST['txtCorreo']) && !empty($_POST['txtCorreo'])) {
 
 '
 ;
+
+$con -> close();
 	}else{
 		echo "<script> alert('Usuario no registrado');</script>";
 		echo "<script> window.location='../../index.php'; </script>";

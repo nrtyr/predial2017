@@ -30,9 +30,12 @@
 					<input type="password" name="txtPass" placeholder="Contraseña" class="formText" minlength="6" required />
 					<br>
 					<p class="infoTxtInput">Clave Catastral:</p>
-					<input type="text" name="txtClvCat" placeholder="17 Dígitos" class="formText" maxlength="16" minlength="16" required />
+					<input type="text" name="txtClvCat" placeholder="16 Dígitos" class="formText" maxlength="16" minlength="16" required />
 					<br>
 					<input type="submit"  value="Siguiente" class="btnLoginUno"/>
+					<div class="marcaAgua">
+					<img src="../../css/img/agua.svg" class="marcaAguaX">
+					</div>
 				
 				</form>
 		</div>
